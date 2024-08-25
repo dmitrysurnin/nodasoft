@@ -57,12 +57,12 @@ abstract class ReferencesOperation
     }
 }
 
-function getResellerEmailFrom()
+function getResellerEmailFrom($resellerId)
 {
     return 'contractor@example.com';
 }
 
-function getEmailsByPermit($resellerId, $event)
+function getEmailsByPermit($resellerId, $event): array
 {
     // fakes the method
     return ['someemeil@example.com', 'someemeil2@example.com'];
@@ -78,13 +78,13 @@ class NotificationManager
 {
     public static function send(
         $resellerId,
-        $clientid,
+        $clientId,
         $event,
         $notificationSubEvent,
         $templateData,
         &$errorText,
         $locale = null
-    ) {
+    ): bool {
         // fakes the method
         return true;
     }
