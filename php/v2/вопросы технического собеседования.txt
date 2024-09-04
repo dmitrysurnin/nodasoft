@@ -11,7 +11,7 @@
 10. strlen, mb_strlen, in_array, array_filter, instanceof
 11. json_decode/encode, serialize
 12. Вычислить общие элементы двух массивов. Трёх массивов (можно 3 и более в array_intersect).
-13. Что вернёт isset($a['b']), если $a = ['b' => null] (false)
+13. Что вернёт isset($a['b']). А если $a = ['b' => null] (false). Ф-я array_key_exists.
 14. Анонимные функции, где используются
 15. По mysql пара вопросов, простые, вспомнить count, group by и having, отличие join от left join.
 16. Как конвертнуть массив в объект
